@@ -9,7 +9,14 @@ class Dataservice{
         }
         return instance;
     }
-
+    itemonwishlist=item =>{
+        for (var x=0;x<wishlist.length;x++){
+            if(wishlist[x]._id === item._id){
+                return true;
+            }
+        }
+        return false;
+    }
     
     addwli=item =>{
         wishlist.push(item);

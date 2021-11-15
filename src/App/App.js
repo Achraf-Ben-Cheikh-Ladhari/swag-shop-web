@@ -34,7 +34,7 @@ class App extends Component{
   
     productlist=()=>{
       const list=this.state.products.map((prod)=>
-        <div className="col-3" key={prod._id}><Product product={prod} />
+        <div className="col-4" key={prod._id}><Product product={prod} />
         </div>
        );
       return (list);
@@ -55,8 +55,13 @@ class App extends Component{
           </div>
           </div>
           <div className="col-4">
-            <Wishlist />
+          <Wishlist />
           </div>
+      </div>
+      <div className="row">
+        <div className="col-4">
+        <Wishlist />
+        </div>
       </div>
       </div>
     </div>

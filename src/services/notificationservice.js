@@ -1,3 +1,4 @@
+import Wishlist from "../wishlist/wishlist";
 
 
 export const NOTIF_WISHLIST_CHANGED ="notif_wishlist_changed";
@@ -12,7 +13,7 @@ class Notificationservice{
         }
         return instance;
     }
-
+   
 
     postnotif=(notifName,data)=>{
         let obs= observers[notifName];
